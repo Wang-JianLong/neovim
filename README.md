@@ -14,7 +14,7 @@
 |   |   |-- tree.lua
 |   |   |-- treesitter.lua
 |   |   `-- vim_go.lua
-|   |-- extends.lua # 在init.lua中引用
+|   |-- extends.lua 
 |   |-- lsp
 |   |   |-- cmp.lua
 |   |   |-- lsp.lua
