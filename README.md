@@ -23,3 +23,4 @@
 |   |-- pkeys.lua
 |   `-- plugins.lua
 ```
+window系统使用treesitter须谨慎
