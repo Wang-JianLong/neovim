@@ -14,7 +14,7 @@
 |   |   |-- tree.lua
 |   |   |-- treesitter.lua
 |   |   `-- vim_go.lua
-|   |-- extends.lua
+|   |-- extends.lua # 在init.lua中引用
 |   |-- lsp
 |   |   |-- cmp.lua
 |   |   |-- lsp.lua
@@ -22,6 +22,4 @@
 |   |-- maps.lua
 |   |-- pkeys.lua
 |   `-- plugins.lua
-`-- plugin
-    `-- packer_compiled.lua
 ```
