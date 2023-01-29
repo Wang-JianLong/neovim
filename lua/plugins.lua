@@ -40,8 +40,8 @@ return require('packer').startup({ function(use)
   }
 
   use 'sainnhe/everforest'
-
-
+  use 'doums/darcula'
+  use 'ellisonleao/gruvbox.nvim'
   -- CMP
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'

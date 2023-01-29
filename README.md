@@ -23,4 +23,7 @@
 |   |-- pkeys.lua
 |   `-- plugins.lua
 ```
-window系统使用treesitter须谨慎
+> window系统使用treesitter须谨慎,  
+一般会出现nodejs not found modul error
+
+
