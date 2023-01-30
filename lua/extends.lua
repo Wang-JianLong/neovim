@@ -13,4 +13,10 @@ require('config.term')
 require('config.vim_go')
 require('config.themes').three()
 require('config.markdown')
---require('config.treesitter').langlist({ 'c', 'vim', 'lua', 'help', 'rust', 'c', 'go' })
+local M = {}
+function M.env(sys)
+  require('lsp.cpp').env(sys)
+  require('config.treesitter').langlist(sys,{ 'c', 'vim', 'lua', 'help', 'rust', 'c', 'go' })
+end
+
+return M
