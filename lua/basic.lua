@@ -17,7 +17,7 @@ local opt = vim.opt
 -- ON
 opt.number = true
 opt.relativenumber = true
-
+opt.cindent = true
 -- Tab
 opt.tabstop = 4
 opt.shiftwidth = 4
