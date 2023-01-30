@@ -16,7 +16,7 @@ require('config.markdown')
 local M = {}
 function M.env(sys)
   require('lsp.cpp').env(sys)
-  require('config.treesitter').langlist(sys,{ 'c', 'vim', 'lua', 'help', 'rust', 'c', 'go' })
+  require('config.treesitter').langlist(sys, { 'c', 'vim', 'lua', 'help', 'rust', 'c', 'go' })
 end
 
 return M
