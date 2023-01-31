@@ -1,6 +1,6 @@
 local Sitter = {
   langlist = function(sys, list)
-    if sys == 'linux' then
+    if sys == 1 then
 
       require 'nvim-treesitter.configs'.setup {
         -- A list of parser names, or "all" (the four listed parsers should always be installed)

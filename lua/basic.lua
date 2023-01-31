@@ -26,7 +26,7 @@ opt.softtabstop = 4
 -- color
 vim.cmd [[syntax on]]
 if (vim.fn.has('termguicolors') == 1) then
-  --	opt.termguicolors = true
+  -- opt.termguicolors = true
 end
 
 -- utf8

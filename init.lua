@@ -1,3 +1,3 @@
 require('basic')
 require('maps')
-require('extends').env('linux')
+require('extends').env(1)
