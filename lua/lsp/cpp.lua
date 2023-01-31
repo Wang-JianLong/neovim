@@ -6,9 +6,9 @@ function M.env(sys)
     pattern = "cpp",
     callback = function()
       local envkey = ":! g++ % -o wjl  && wjl  <CR>";
-      local tenvkey = ":terminal g++ % -o wjl && wjl<CR>"
+      local tenvkey = ":terminal g++ % -o wjl && wjl<CR>i"
       if sys == 1 then
-        tenvkey = ":terminal g++ % -o wjl && ./wjl<CR>"
+        tenvkey = ":terminal g++ % -o wjl && ./wjl<CR>i"
         envkey = ":! g++ % -o wjl  && ./wjl <CR>"
       end
       -- -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG
