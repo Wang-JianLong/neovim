@@ -7,16 +7,17 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 --keys
-map('n','<space>w',':w<CR>')
-map('n','<space>wq',':wq<CR>')
+map('n', '<space>w', ':w<CR>')
+map('n', '<space>q', ':q<CR>')
+map('n', '<space>wq', ':wq<CR>')
 
-map('n','H','^')
-map('n','L','$')
+map('n', 'H', '^')
+map('n', 'L', '$')
 -- window keys
-map('n','sv',':vsplit<CR>')
-map('n','sp',':split<CR>')
-map('n','sc','<C-w>c')
-map('n','so','<C-w>o')
+map('n', 'sv', ':vsplit<CR>')
+map('n', 'sp', ':split<CR>')
+map('n', 'sc', '<C-w>c')
+map('n', 'so', '<C-w>o')
 -- Atl + hjkl 换屏
 map("n", "<A-h>", "<C-w>h", opt)
 map("n", "<A-j>", "<C-w>j", opt)

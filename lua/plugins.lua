@@ -73,6 +73,9 @@ return require('packer').startup({ function(use)
     end,
   })
   use({ "img-paste-devs/img-paste.vim" })
+
+  use({ "glepnir/lspsaga.nvim", branch = "main", config = function() require("lspsaga").setup({}) end,
+    requires = { { "nvim-tree/nvim-web-devicons" } } })
 end,
   config = {
     display = {

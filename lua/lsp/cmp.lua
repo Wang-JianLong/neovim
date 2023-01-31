@@ -65,7 +65,8 @@ cmp.setup({
     }),
     ["<Down>"] = cmp.mapping(cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }), { "i" }),
     ["<Up>"] = cmp.mapping(cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }), { "i" }),
-    ["<C-n>"] = cmp.mapping({
+    -- ["<C-n>"] = cmp.mapping({
+    ["<A-n>"] = cmp.mapping({
       c = function()
         if cmp.visible() then
           cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
@@ -81,7 +82,8 @@ cmp.setup({
         end
       end,
     }),
-    ["<C-p>"] = cmp.mapping({
+    -- ["<C-p>"] = cmp.mapping({
+    ["<A-p>"] = cmp.mapping({
       c = function()
         if cmp.visible() then
           cmp.select_prev_item({ behavior = cmp.SelectBehavior.Select })
