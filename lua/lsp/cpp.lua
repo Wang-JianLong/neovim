@@ -6,7 +6,7 @@ function M.env(sys)
     pattern = "cpp",
     callback = function()
       local envkey = ":! g++ % -o wjl  && wjl  <CR>";
-      if sys == 'linux' then
+      if sys == 1 then
         envkey = ":! g++ % -o wjl  && ./wjl <CR>"
       end
       -- -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG
