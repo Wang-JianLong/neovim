@@ -51,11 +51,11 @@ local keybinding = function(code, os)
     code.tkey = M.default_t_k
   end
 
-  vim.keymap.set("n", code.ckey, ":!" .. code.c .. " <CR> ")
+  vim.keymap.set("n", code.ckey, ":w<Esc>:!" .. code.c .. " <CR> ")
   -- run
-  vim.keymap.set("n", code.rkey, ":!" .. code.runf(os) .. "<CR>")
+  vim.keymap.set("n", code.rkey, ":w<Esc>:!" .. code.runf(os) .. "<CR>")
   -- terminal run
-  vim.keymap.set("n", code.tkey, ":terminal " .. code.runf(os) .. "<CR>i")
+  vim.keymap.set("n", code.tkey, ":w<Esc>:terminal " .. code.runf(os) .. "<CR>i")
 end;
 
 function M.is_linux(sys)
