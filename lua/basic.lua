@@ -5,7 +5,7 @@
     vim.w: 窗口变量
     vim.t: 选项卡变量
     vim.v: 预定义变量
-    vim.env: 环境变量
+  vim.env: 环境变量
     vim.o: 行为类似于 :let &{option-name}
     vim.go: 行为类似于 :let &g:{option-name}
     vim.bo: 适用于 buffer-local 选项，行为类似于 :let &l:{option-name}

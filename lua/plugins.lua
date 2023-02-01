@@ -13,6 +13,8 @@ return require('packer').startup({ function(use)
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
   }
+  use "nvim-lua/plenary.nvim"
+  use 'jose-elias-alvarez/null-ls.nvim'
   use {
     'nvim-tree/nvim-tree.lua',
     requires = {

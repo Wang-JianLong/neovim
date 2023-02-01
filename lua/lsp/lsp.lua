@@ -4,7 +4,7 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 vim.keymap.set('n', '<space>l', vim.diagnostic.setloclist, opts)
 
-local on_attach = function(client, bufnr)
+local my_on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
   local bufopts = { noremap = true, silent = true, buffer = bufnr }
@@ -42,7 +42,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 local lsp_config = {
   capabilities = capabilities,
   on_attach = function(_, bufnr)
-    on_attach(_, bufnr)
+    my_on_attach(_, bufnr)
   end
 }
 

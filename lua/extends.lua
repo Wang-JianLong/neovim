@@ -5,6 +5,7 @@ require('lsp.mason')
 require('lsp.lsp')
 require('lsp.cmp')
 require('lsp.lspsaga')
+require('lsp.null_ls')
 
 require('config.tree')
 --require('config.bufferline')
@@ -18,7 +19,8 @@ require('config.themes').one()
 require('config.markdown')
 local M = {}
 function M.env(sys)
-  require('lsp.cpp').env(sys)
+  require('base_run').is_linux(sys)
+  -- require('base_run_2')
   require('config.treesitter').langlist(sys, { 'c', 'vim', 'lua', 'help', 'rust', 'c', 'go' })
 end
 

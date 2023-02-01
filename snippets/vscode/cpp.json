@@ -3,7 +3,7 @@
     "prefix":"main",
     "body":[
       "#include <iostream>",
-      "\n",
+      "",
       "int main()",
       "{",
       "     $1",
