@@ -4,7 +4,7 @@ require('pkeys')
 require('lsp.mason')
 require('lsp.lsp')
 require('lsp.cmp')
-require('lsp.lspsaga')
+-- require('lsp.lspsaga')
 require('lsp.null_ls')
 
 require('config.tree')
