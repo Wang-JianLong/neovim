@@ -23,3 +23,10 @@ map("n", "<A-h>", "<C-w>h", opt)
 map("n", "<A-j>", "<C-w>j", opt)
 map("n", "<A-k>", "<C-w>k", opt)
 map("n", "<A-l>", "<C-w>l", opt)
+
+-- Increment
+map('n', "=", '<C-a>', opt)
+map('n', "-", '<C-x>', opt)
+
+-- yank
+map('v', ';y', '"+y')

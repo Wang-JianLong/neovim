@@ -1,7 +1,7 @@
 local map = vim.keymap.set
 
 -- tree
-map('n', '<space>e', ':NvimTreeToggle<CR>')
+map('n', ';e', ':NvimTreeToggle<CR>')
 
 vim.keymap.set(
   "n",
@@ -19,3 +19,8 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 
 map('n', '<space>te', ':ToggleTerm size=10<CR>')
+
+-- BufferLine
+map('n', '<A-[>', ':BufferLineGoToBuffer 1<CR>')
+map('n', '<A-]>', ':BufferLineGoToBuffer -1<CR>')
+map('n', 'xb', ':BufferLinePickClose<CR>')

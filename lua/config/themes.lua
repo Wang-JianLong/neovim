@@ -1,6 +1,6 @@
 local Theme = {}
 
-function Theme.one()
+function Theme.everforest()
   vim.cmd([[colorscheme everforest]])
 end
 
@@ -8,7 +8,7 @@ function Theme.two()
   vim.cmd([[colorscheme darcula]])
 end
 
-function Theme.three()
+function Theme.gruvbox()
   vim.o.background = "dark" -- or "light" for light mode
   vim.cmd([[colorscheme gruvbox]])
   -- setup must be called before loading the colorscheme
@@ -32,5 +32,19 @@ function Theme.three()
   })
   vim.cmd("colorscheme gruvbox")
 end
+
+function Theme.neosolarized()
+  require('colorbuddy').setup()
+  vim.cmd [[set termguicolors]]
+  require('neosolarized').setup({
+    comment_italics = true,
+    background_set = false,
+  })
+end
+
+-- function Theme.colorizer()
+--   vim.cmd [[set termguicolors]]
+--   require 'colorizer'.setup()
+-- end
 
 return Theme

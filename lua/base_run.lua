@@ -56,10 +56,10 @@ local keybinding = function(code, os)
   vim.keymap.set("n", code.rkey, ":w<Esc>:!" .. code.runf(os) .. "<CR>")
   -- terminal run
   vim.keymap.set("n", code.tkey, ":w<Esc>:terminal " .. code.runf(os) .. "<CR>i")
-  vim.keymap.set("i", code.ckey, "<Esc>:w<Esc>:!" .. code.c .. " <CR> ")
-  -- run
+  -- vim.keymap.set("i", code.ckey, "<Esc>:w<Esc>:!" .. code.c .. " <CR> ")
+  -- -- run
   vim.keymap.set("i", code.rkey, "<Esc>:w<Esc>:!" .. code.runf(os) .. "<CR>")
-  -- terminal run
+  -- -- terminal run
   vim.keymap.set("i", code.tkey, "<Esc>:w<Esc>:terminal " .. code.runf(os) .. "<CR>i")
 end;
 

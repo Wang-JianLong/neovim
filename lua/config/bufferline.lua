@@ -1,3 +1,3 @@
-require("bufferline").setup {
+local bl = require('bufferline')
 
-}
+bl.setup()

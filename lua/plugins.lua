@@ -50,6 +50,8 @@ return require('packer').startup({ function(use)
   use 'sainnhe/everforest'
   use 'doums/darcula'
   use 'ellisonleao/gruvbox.nvim'
+  -- 配套主题
+  use { 'tjdevries/colorbuddy.nvim', requires = { { 'svrana/neosolarized.nvim' } } }
   -- CMP
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
@@ -61,6 +63,7 @@ return require('packer').startup({ function(use)
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
   use { 'jose-elias-alvarez/null-ls.nvim', requires = 'nvim-lua/plenary.nvim' }
+  use 'MunifTanjim/prettier.nvim'
 
 
   use { "akinsho/toggleterm.nvim", tag = '*' }
@@ -78,6 +81,8 @@ return require('packer').startup({ function(use)
 
   use({ "glepnir/lspsaga.nvim", branch = "main", config = function() require("lspsaga").setup({}) end,
     requires = { { "nvim-tree/nvim-web-devicons" } } })
+  -- 显示颜色
+  -- use 'norcalli/nvim-colorizer.lua'
 end,
   config = {
     display = {

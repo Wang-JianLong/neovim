@@ -120,6 +120,11 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "git@github.com:saadparwaiz1/cmp_luasnip"
   },
+  ["colorbuddy.nvim"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
+    url = "git@github.com:tjdevries/colorbuddy.nvim"
+  },
   darcula = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/darcula",
@@ -171,6 +176,11 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "git@github.com:williamboman/mason.nvim"
   },
+  ["neosolarized.nvim"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/neosolarized.nvim",
+    url = "git@github.com:svrana/neosolarized.nvim"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -215,6 +225,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "git@github.com:nvim-lua/plenary.nvim"
+  },
+  ["prettier.nvim"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/prettier.nvim",
+    url = "git@github.com:MunifTanjim/prettier.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
