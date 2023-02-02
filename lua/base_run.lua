@@ -17,7 +17,7 @@ local M = {
       name = 'cpp',
       c = 'g++ % -o wjl',
       runf = function(os)
-        if os == 1 then
+        if os then
           return 'g++ % -o wjl && ./wjl'
         end
         return 'g++ % -o wjl && wjl'
@@ -27,7 +27,7 @@ local M = {
       name = 'c',
       c = 'gcc % -o ctest',
       runf = function(os)
-        if os == 1 then
+        if os then
           return 'gcc % -o ctest && ./ctest'
         end
         return 'gcc % -o ctest  && ctest'

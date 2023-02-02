@@ -8,8 +8,8 @@ require('lsp.lspsaga')
 require('lsp.null_ls')
 
 require('config.tree')
-require('config.bufferline')
 require('config.lua_line')
+require('config.bufferline')
 require('config.text')
 require('config.telescope')
 require('config.term')
@@ -22,12 +22,12 @@ local thems = require 'config.themes'
 thems.neosolarized();
 -- thems.colorizer();
 
-local M = {}
+local Extends = {}
 
-function M.env(sys)
-  require('base_run').is_linux(sys)
-  -- require('base_run_2')
-  require('config.treesitter').langlist(sys, { 'c', 'vim', 'lua', 'help', 'rust', 'c', 'go' })
+function Extends.env(linux)
+  require('base_run').is_linux(linux)
+  require('config.treesitter').langlist(linux, { 'c', 'vim', 'lua', 'help', 'rust', 'c', 'go' })
+  require('config.lua_snip').is_linux(linux)
 end
 
-return M
+return Extends

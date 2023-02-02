@@ -1,3 +1,5 @@
 require('basic')
 require('maps')
-require('extends').env(1)
+
+local is_linux_env = os.getenv('SHELL') ~= nil;
+require('extends').env(is_linux_env)
