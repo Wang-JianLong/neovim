@@ -37,7 +37,7 @@ function Theme.neosolarized()
   require('colorbuddy').setup()
   vim.cmd [[set termguicolors]]
   require('neosolarized').setup({
-    comment_italics = true,
+    comment_italics = false,
     background_set = false,
   })
 end

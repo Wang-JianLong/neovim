@@ -82,6 +82,13 @@ return require('packer').startup({ function(use)
     requires = { { "nvim-tree/nvim-web-devicons" } } })
   -- 显示颜色
   -- use 'norcalli/nvim-colorizer.lua'
+  use 'xiyaowong/nvim-transparent'
+  -- TODO and bookmark
+  use { "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim" }
+  use 'MattesGroeger/vim-bookmarks' 
+  use 'tom-anders/telescope-vim-bookmarks.nvim'
+  -- git
+  use 'f-person/git-blame.nvim'
 end,
   config = {
     display = {

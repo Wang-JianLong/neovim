@@ -135,6 +135,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\wangj\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\everforest",
     url = "git@github.com:sainnhe/everforest"
   },
+  ["git-blame.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\wangj\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\git-blame.nvim",
+    url = "git@github.com:f-person/git-blame.nvim"
+  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "C:\\Users\\wangj\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",
@@ -201,10 +206,20 @@ _G.packer_plugins = {
     path = "C:\\Users\\wangj\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "git@github.com:neovim/nvim-lspconfig"
   },
+  ["nvim-transparent"] = {
+    loaded = true,
+    path = "C:\\Users\\wangj\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-transparent",
+    url = "git@github.com:xiyaowong/nvim-transparent"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "C:\\Users\\wangj\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
     url = "git@github.com:nvim-tree/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "C:\\Users\\wangj\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
+    url = "git@github.com:nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -226,20 +241,30 @@ _G.packer_plugins = {
     path = "C:\\Users\\wangj\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\prettier.nvim",
     url = "git@github.com:MunifTanjim/prettier.nvim"
   },
+  ["telescope-vim-bookmarks.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\wangj\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-vim-bookmarks.nvim",
+    url = "git@github.com:tom-anders/telescope-vim-bookmarks.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\wangj\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "git@github.com:nvim-telescope/telescope.nvim"
+  },
+  ["todo-comments.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\wangj\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\todo-comments.nvim",
+    url = "git@github.com:folke/todo-comments.nvim"
   },
   ["toggleterm.nvim"] = {
     loaded = true,
     path = "C:\\Users\\wangj\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\toggleterm.nvim",
     url = "git@github.com:akinsho/toggleterm.nvim"
   },
-  ["vim-go"] = {
+  ["vim-bookmarks"] = {
     loaded = true,
-    path = "C:\\Users\\wangj\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-go",
-    url = "git@github.com:fatih/vim-go"
+    path = "C:\\Users\\wangj\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-bookmarks",
+    url = "git@github.com:MattesGroeger/vim-bookmarks"
   },
   ["vim-surround"] = {
     loaded = true,
@@ -264,14 +289,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
 -- Config for: lspsaga.nvim
 time([[Config for lspsaga.nvim]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\flspsaga\frequire\0", "config", "lspsaga.nvim")
 time([[Config for lspsaga.nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

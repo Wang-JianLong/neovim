@@ -17,6 +17,8 @@ require('config.lua_snip')
 --require('config.vim_go')
 require('config.markdown')
 require('config.pretter')
+require('config.transparent')
+require('config.todo')
 
 local thems = require 'config.themes'
 thems.neosolarized();

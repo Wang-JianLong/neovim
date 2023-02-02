@@ -13,17 +13,17 @@ end
 -- if you only want these mappings for toggle term use term://*toggleterm#* instead
 vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 
-if vim.fn.has('win32') == 1 or vim.fn.has('win64') == 1 then
-  local powershell_options = {
-    shell = vim.fn.executable "powershell" == 1 and "powershell" or "pwsh",
-    shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;",
-    shellredir = "-RedirectStandardOutput %s -NoNewWindow -Wait",
-    shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode",
-    shellquote = "",
-    shellxquote = "",
-  }
-
-  for option, value in pairs(powershell_options) do
-    vim.opt[option] = value
-  end
-end
+-- if vim.fn.has('win32') == 1 or vim.fn.has('win64') == 1 then
+--   local powershell_options = {
+--     shell = vim.fn.executable "powershell" == 1 and "powershell" or "pwsh",
+--     shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;",
+--     shellredir = "-RedirectStandardOutput %s -NoNewWindow -Wait",
+--     shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode",
+--     shellquote = "",
+--     shellxquote = "",
+--   }
+--
+--   for option, value in pairs(powershell_options) do
+--     vim.opt[option] = value
+--   end
+-- end
