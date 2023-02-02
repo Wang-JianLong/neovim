@@ -68,7 +68,6 @@ return require('packer').startup({ function(use)
 
   use { "akinsho/toggleterm.nvim", tag = '*' }
 
-  use 'fatih/vim-go'
 
   use 'voldikss/vim-translator'
   use({
