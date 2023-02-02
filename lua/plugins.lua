@@ -68,6 +68,9 @@ return require('packer').startup({ function(use)
 
   use { "akinsho/toggleterm.nvim", tag = '*' }
 
+  -- dap
+  use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
+  use 'theHamsta/nvim-dap-virtual-text'
 
   use 'voldikss/vim-translator'
   use({
@@ -85,7 +88,7 @@ return require('packer').startup({ function(use)
   use 'xiyaowong/nvim-transparent'
   -- TODO and bookmark
   use { "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim" }
-  use 'MattesGroeger/vim-bookmarks' 
+  use 'MattesGroeger/vim-bookmarks'
   use 'tom-anders/telescope-vim-bookmarks.nvim'
   -- git
   use 'f-person/git-blame.nvim'

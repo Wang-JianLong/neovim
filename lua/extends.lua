@@ -20,6 +20,9 @@ require('config.pretter')
 require('config.transparent')
 require('config.todo')
 
+-- dap
+require('dap.dap_ui')
+require('dap.sub.dap_virtual')
 local thems = require 'config.themes'
 thems.neosolarized();
 -- thems.colorizer();
@@ -30,6 +33,7 @@ function Extends.env(linux)
   require('base_run').is_linux(linux)
   require('config.treesitter').langlist(linux, { 'c', 'vim', 'lua', 'help', 'rust', 'c', 'go' })
   require('config.lua_snip').is_linux(linux)
+  -- require('dap.sub.cpp').start(linux)
 end
 
 return Extends
